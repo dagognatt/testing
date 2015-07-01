@@ -47,7 +47,7 @@ angular.module('testApp')
 
                 if (polygons.length >= count) add = false;
                 if (add) {
-                    polygons.push(star.clone());
+                    polygons.push(star.clone().scale(Math.random()*0.5));
                 }
                 for (var i = 0; i < polygons.length; i++) {
                     var p = polygons[i];

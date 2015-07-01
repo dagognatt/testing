@@ -142,6 +142,7 @@ angular.module('testApp')
         },
         // Scale/resize the polygon by a factor
         scale: function(factorX, factorY) {
+            factorY=factorY?factorY:factorX;
             var centroid1 = this.centroid();
             this.matrix = this.matrix.map(function (value, index) {
                 if (index[1] === 0) {

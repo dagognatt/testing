@@ -6,7 +6,8 @@ angular.module('testApp')
     function Polygon(points) {
         this.matrix = math.matrix(points);
         this.points = points;
-        this.direction = [Math.random()*10, Math.random()*10];
+        this.direction = [Math.random()*5, Math.random()*10];
+        this.rotation = Math.random()*2;
     }
 
     Polygon.prototype = {

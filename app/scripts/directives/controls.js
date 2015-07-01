@@ -9,10 +9,10 @@ angular.module('testApp')
         
       }, 
       controller: function($scope, $rootScope) {
-
-      	$scope.$watch('testcount', function() {
-      		$rootScope.$broadcast('testcountUpdate', $scope.testcount);
-      	})
+      	$scope.testconfig = {};
+      	$scope.$watch('testconfig', function() {
+      		$rootScope.$broadcast('testcountUpdate', $scope.testconfig);
+      	}, true);
       }
     };
   });

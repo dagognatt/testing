@@ -8,6 +8,9 @@ angular.module('testApp')
         this.points = points;
         this.direction = [Math.random()*5, Math.random()*10];
         this.rotation = Math.random()*2;
+        this.color = '#5C5C99';
+        this.strokeWeight = 2;
+        
     }
 
     Polygon.prototype = {

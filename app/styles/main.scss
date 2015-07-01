@@ -2,4 +2,14 @@ $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
 
 @import 'sass-bootstrap/lib/bootstrap';
 
+.fpsmeter {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
 
+.canvas {
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+}
